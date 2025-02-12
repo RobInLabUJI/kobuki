@@ -43,7 +43,7 @@ def generate_launch_description():
         'slam', default_value='False')
 
     declare_use_rviz_cmd = DeclareLaunchArgument(
-        'rviz', default_value='True')
+        'rviz', default_value='False')
 
     declare_map_cmd = DeclareLaunchArgument(
         'map', default_value='')
@@ -107,7 +107,7 @@ def generate_launch_description():
     ld.add_action(declare_namespace_cmd)
     ld.add_action(localization_cmd)
     ld.add_action(navigation_cmd)
-    ld.add_action(rviz_cmd)
+    #ld.add_action(rviz_cmd)
     ld.add_action(cmd_vel_remap)
 
     return ld
