@@ -182,7 +182,7 @@ def generate_launch_description():
         arguments=[
             '0.0', '0.0', '0.001',
             '0.0', '0.0', '0.0',
-            '1.0', 'base_link', 'base_footprint'
+            '1.0', 'base_footprint', 'base_link'
         ],
     )
 
